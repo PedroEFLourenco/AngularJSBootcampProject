@@ -1,0 +1,112 @@
+/* app css stylesheet */
+
+html{
+  overflow:hidden;
+  height: 100vh;
+}
+
+.menu {
+  list-style: none;
+  border-bottom: 0.1em solid black;
+  margin-bottom: 2em;
+  padding: 0 0 0.5em;
+}
+
+.menu:before {
+  content: "[";
+}
+
+.menu:after {
+  content: "]";
+}
+
+.menu > li {
+  display: inline;
+}
+
+.menu > li + li:before {
+  content: "|";
+  padding-right: 0.3em;
+}
+
+
+/* POCKETRAILER */
+.primary{
+  color:#EDE813;
+}
+.primary-bg{
+  background-color:#EDE813;
+}
+
+.secondary{
+  color:#14233A;
+}
+.secondary-bg{
+  background-color:#14233A;
+}
+
+.red-bg{
+  background-color:#D41818;
+}
+
+.text-color{
+  color:#fff;
+}
+
+.header{
+  height: 80px;
+  width: 100%;
+}
+
+.logo{
+  display: flex;
+  height: 80px;
+  font-size: 1.5em;
+
+}
+.search{
+  display: flex;
+  height: 80px;
+}
+.push-notification{
+  display: flex;
+  height: 80px;
+}
+.notification{
+  position: absolute;
+  text-align: center;
+  font-size:12px;
+  top:10px;
+  margin-left:10px;
+}
+.notification span{
+  height: 25px;
+  width: 25px;
+  background-color: #D41818;
+  border-radius: 50%;
+  display: inline-block;
+}
+.main-container{
+  height: 100vh;
+}
+.movie-list{
+  height: calc(100vh - 125px);
+  overflow-y: auto;
+}
+.card{
+  background-color:#14233A !important;
+}
+.detail-movie{
+  height: calc(100vh - 125px);
+  overflow-y: auto;
+  padding-top:1em;
+}
+.movie-item{
+  padding-top:1em;
+  min-height: 250px;
+}
+.movie-cast-faces{
+  padding-right:10px;
+ float:right;
+
+}

@@ -1,0 +1,13 @@
+<div class="movie-list">
+  <!-- Movie-item component aqui-->
+  <movie-item ng-repeat="x in movieListScope.moviesDB"
+   ano={{x.ano}}
+   nome={{x.nome}}
+   plot={{x.plot}}
+   elenco=x.elenco
+   trailer={{x.trailer}}
+   poster={{x.poster}}
+   rented={{x.rented}}>
+  </movie-item>
+
+</div>

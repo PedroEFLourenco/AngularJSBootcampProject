@@ -1,0 +1,31 @@
+<div class="detail-movie">
+  <div class="row">
+    <div class="col-5">
+      <div class="movie-poster">
+        <img src="https://placeholdit.imgix.net/~text?txtsize=38&txt=400%C3%97400&w=400&h=500" class="w-100">
+      </div>
+      <!--Rent button component aqui-->
+      <rent-button></rent-button>
+    </div>
+    <div class="col-7 text-color">
+      <div class="movie-trailer">
+        <ng-youtube-embed
+          video="scopeMovieInfoWrapper.VideoURL"
+          autoplay="false"
+          color="white"
+          disablekb="true"
+          end="20">
+        </ng-youtube-embed>
+      </div>
+      <div class="movie-detail-detail">
+        <h4 class="movie-title">titulo</h4>
+        <small class="text-italic">categoria</small>
+        <p class="movie-plot">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto, fuga nemo dolore error asperiores nesciunt in ea cum odit animi explicabo. Corrupti cum voluptate commodi perspiciatis labore facilis quae quisquam!</p>
+        <!-- cast Faces component aqui -->
+        <cast-faces></cast-faces>
+        <div class="movie-rate">rates</div>
+        <!-- <div ng-view></div> -->
+      </div>
+    </div>
+  </div>
+</div>
