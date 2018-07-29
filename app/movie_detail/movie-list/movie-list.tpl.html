@@ -7,7 +7,10 @@
    elenco=x.elenco
    trailer={{x.trailer}}
    poster={{x.poster}}
-   rented={{x.rented}}>
+   rented={{x.rented}}
+   ng-click='movieListScope.select($index)' /* ng-click: acção a tomar em caso de click*/
+   ng-class='{active: ($index == movieListScope.indexSelected)}' /*adicionar classes de CSS a objectos. Neste caso concreto consoante uma condição*/
+   >
   </movie-item>
 
 </div>

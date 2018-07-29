@@ -1,15 +1,18 @@
 'use strict'
 
 angular.module('movie_detail')
-.component('castFaces',
+.component('castFace',
 {
-  templateUrl: 'movie_detail/movie-detail-detail/castfaces/castFaces.tpl.html',
-  controller: 'castFacesController',
-  controllerAs: 'castFacesScope'
+  templateUrl: 'movie_detail/movie-detail-detail/castfaces/castFace.tpl.html',
+  controller: 'castFaceController',
+  controllerAs: 'castFaceScope',
+  bindings:{
+    nome: '@'
+  }
 })
-.controller('castFacesController',castFacesFunction);
+.controller('castFaceController',castFaceFunction);
 
-function castFacesFunction()
+function castFaceFunction()
 {
-  var castFacesScope = this
+  var castFaceScope = this
 }

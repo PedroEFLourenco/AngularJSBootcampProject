@@ -5,6 +5,17 @@ html{
   height: 100vh;
 }
 
+a{
+  text-decoration: none;
+  border:none;
+}
+::-webkit-scrollbar {
+  width: 0px;  /* remove scrollbar space */
+  background: transparent;  /* optional: just make scrollbar invisible */
+}
+/* optional: show position indicator in red */
+
+
 .menu {
   list-style: none;
   border-bottom: 0.1em solid black;
@@ -91,7 +102,8 @@ html{
 }
 .movie-list{
   height: calc(100vh - 125px);
-  overflow-y: auto;
+  overflow-y: scroll;
+  overflow-x: hidden;
 }
 .card{
   background-color:#14233A !important;
@@ -99,14 +111,31 @@ html{
 .detail-movie{
   height: calc(100vh - 125px);
   overflow-y: auto;
+  overflow-x: hidden;
   padding-top:1em;
 }
 .movie-item{
   padding-top:1em;
   min-height: 250px;
 }
+.movie-item .card{
+  border:none;
+}
+movie-item{
+display:block;
+cursor: pointer;
+}
+movie-item.active {
+  border:2px solid #fff;
+  padding:1em;
+}
 .movie-cast-faces{
-  padding-right:10px;
- float:right;
-
+  padding-bottom:10px;
+}
+.card-text{
+  overflow: hidden;
+width:100%;
+  display: -webkit-box;
+-webkit-line-clamp: 3;
+-webkit-box-orient: vertical;
 }
