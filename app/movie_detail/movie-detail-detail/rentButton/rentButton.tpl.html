@@ -1,1 +1,2 @@
-<button class="btn btn-block red-bg text-color mt-3">alugar</button>
+<button class="btn btn-block red-bg text-color mt-3" ng-if="!rentButtonScope.rentIndicator" ng-click="rentButtonScope.addRental()">Alugar</button>
+<button class="btn btn-block gray-bg text-color mt-3" ng-if="rentButtonScope.rentIndicator" ng-click="rentButtonScope.removeRental()">Desalugar</button>

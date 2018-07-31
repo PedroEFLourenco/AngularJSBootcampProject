@@ -4,7 +4,7 @@ angular.module('movie_detail')
 .service('movieProvider', MovieProvider);
 
 function MovieProvider(){
-    var selectedMovieIndex = 0;
+    this.selectedMovieIndex = 0;
 
   this.getSelectedMovie = function()
   {
@@ -226,7 +226,7 @@ this.getMovieDB = function()
 
               ],
               trailer: 'https://www.youtube.com/watch?v=mBBuzHrZBro',
-              poster: 'http://img.goldposter.com/2015/10/Bridge-of-Spies_poster_goldposter_com_9.jpg?x-oss-process=image/resize,m_fill,h_800,w_547/quality,q_80',
+              poster: 'http://www.impawards.com/2015/posters/bridge_of_spies_ver2.jpg',
               rented:false
           },
           {

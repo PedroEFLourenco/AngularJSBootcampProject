@@ -8,8 +8,20 @@ angular.module('header')
   controllerAs:'shoppingCartScope'
 })
 .controller('shoppingCartCtrl',cartCtrl)
-
-function cartCtrl()
+cartCtrl.$inject = ['$scope', 'rentalService'];
+function cartCtrl($scope, rentalService)
 {
   var shoppingCartScope = this;
+  shoppingCartScope.numberOfRentals = rentalService.rentedCount;
+
+
+  $scope.$watch(function(){ return rentalService.rentedCount}, changeCounter);
+
+  function changeCounter(newCount, oldCount)
+  {
+    if (newCount !== oldCount)
+    {
+      shoppingCartScope.numberOfRentals = newCount;
+    }
+  }
 }
